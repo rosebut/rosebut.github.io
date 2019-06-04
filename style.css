@@ -35,13 +35,13 @@ body {
 	background-color: rgba(255,255,255,0.75);
 }
 
-.menu li {
+.menu>li {
 	width: 25%;
 	float: left;
 	border-left: 1px solid #2c71b8;
 }
 
-.menu li:last-child {
+.menu>li:last-child {
 	border-right: 1px solid #2c71b8;
 }
 .menu a {
@@ -84,7 +84,7 @@ body {
 	right:165px;
 }
 
-.shop img {
+.basket img {
 	padding: 10px;
 	background-color: rgba(255,255,255);
 	position: absolute;
@@ -92,7 +92,7 @@ body {
 	right:90px;
 }
 
-.shop p {
+.basket p {
 	width:20px;
 	height:20px;
 	text-align: center;
@@ -104,5 +104,31 @@ body {
 	position: absolute;
 	top:20px;
 	right:120px;
-
 }
+
+.sub_menu {
+	width: 292px;
+	background-color: #2c71b8;
+}
+
+
+.sub_menu a {
+	color: rgba(255,255,255);
+	text-align: left;
+	font-size: 21px;
+	font-weight: 300;
+	padding-left: 30px;
+}
+
+.sub_menu a:hover {
+	color: #2c71b8;
+	background-color: rgba(255,255,255);
+}
+
+.menu ul {
+	display: none;
+}
+
+.menu li:hover ul {
+	display: block;
+} 
